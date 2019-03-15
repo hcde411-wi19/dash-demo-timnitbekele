@@ -2,8 +2,8 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-import pandas as pd
 import plotly.graph_objs as go
+import pandas as pd
 
 
 # Exercise 2
@@ -26,12 +26,12 @@ app.layout = html.Div(children=[
             'data': [
                 go.Scatter(
                 # set x to be retail cost, and y to be the dealers cost. Using points to represent data.
-                    x = df['Retail Price'], 
+                    x= df['Retail Price'], 
                     y = df['Dealer Cost'], 
                 mode = 'markers',
                 text = df ['Vehicle Name'],
                 marker = {
-                   'size': = 12,
+                    'size': = 12,
                     'color': 'RGB = [255 153 153]/256'
                 }
             ) 
