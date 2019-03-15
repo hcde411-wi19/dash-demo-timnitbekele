@@ -46,7 +46,7 @@ app.layout = html.Div(children=[
     )
 ])
 
-if __name__ == '__main__':
+if __name__ == '__exercise3__':
     # start the Dash app
     app.run_server(debug=True)
 
