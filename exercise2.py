@@ -32,7 +32,7 @@ app.layout = html.Div(children=[
                 text = df ['Vehicle Name'],
                 marker = {
                     'size': 12,
-                    'color': 'rgb[255,153,153]'
+                    'color': 'rgb(255,0,0)'
                 }
             ) 
         ],
