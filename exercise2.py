@@ -25,21 +25,23 @@ app.layout = html.Div(children=[
             # configure the data
             'data': [
                 go.Scatter(
-                # set x to be retail cost, and y to be the dealers cost. Using points to represent data.
+                # setting x as retail cost, and y as dealers cost (points represent data)
                     x= df['Retail Price'], 
                     y = df['Dealer Cost'], 
                 mode = 'markers',
                 text = df ['Vehicle Name'],
                 marker = {
-                    'size': = 12,
-                    'color': 'RGB = [255 153 153]/256'
+                    'size': 12,
+                    'color': 'rgb[255,153,153]'
                 }
             ) 
         ],
             # configure the layout of the visualization --
             # set the title 
             'layout': {
-                'title': 'Vehicles Retail Price vs. Dealer Cost'
+                'title': 'Vehicles Retail Price vs. Dealer Cost',
+                'xaxis': {'title': 'Retail Price'},
+                'yaxis': {'title': 'Dealer Cost'}
             }
         }
     )
